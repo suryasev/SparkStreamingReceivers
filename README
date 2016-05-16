@@ -1,0 +1,6 @@
+Code accompanying Data by the Bay Reliable Spark streaming presentation:
+https://databythebay2016.sched.org/event/6EQ8/building-a-realtime-receiver-with-spark-streaming
+
+To run:
+sbt assembly
+path_to_spark/spark-submit --class com.gofundme.databythebay.TwitterStreamWithReliableReceiver --master local[8] target/scala-2.11/SparkFun-assembly-1.0.jar
